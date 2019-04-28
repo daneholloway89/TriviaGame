@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+  </head>
+
+  <body>
+
+      <div class="container1">
+          <header>
+            <h1 id="heading1">The Office Trivia</h1>
+
+          </header>
+             
+      </div>
+
+      <div id="timer"></div>
+
+      <!-- <div id="start">
+          <button id="bgnBtn" class="startbutton">Start Game</button>
+      </div> -->
+      <!--Will be dynamic filling the HTML with javascript-->
+      <div id="quiz-container" class="container">
+        <div class="title">""You miss 100% of the shots you don't take" - Wayne Gretzky" - Michael Scott</div>
+        <div id="question" class="question"></div>
+      <!--Answer options-->
+        <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+      <!--Button to validate answer and move to next question-->
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+
+        <audio controls id="audio">
+            <source src="assets/images/office.mp3" type="audio/mpeg">
+            <source src="assets/images/office.ogg" type="audio/ogg">
+          </audio>
+          <p>Warning: Check volume before pressing play button!</p>
+      </div>
+
+      <div id="results" class="container-results">
+
+      </div>
+
+      
+
+        
+    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/quizscript.js"></script>
+  </body>
+
+  </html>
